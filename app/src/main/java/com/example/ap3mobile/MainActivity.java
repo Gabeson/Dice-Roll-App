@@ -2,6 +2,7 @@ package com.example.ap3mobile;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -54,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Dice","Entrou no clique");
                 int som = N1 + N2;
 
-                Toast.makeText(MainActivity.this, "Resultado: "+som, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Resultado: " + som, Toast.LENGTH_SHORT).show();
+
             }
         });
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
